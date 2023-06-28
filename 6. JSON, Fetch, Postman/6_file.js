@@ -269,6 +269,28 @@ fetch(postApi)
 
 //------------------- JSON SERVER -------------------------
 
-// Fake API server
 
+// Fake API server (Mock API)
+var courseApi = 'http://localhost:3000/courses'
+
+fetch(courseApi)
+    .then(function(response) {
+        return response.json()
+    })
+    .then(function(courses) {
+        console.log(courses)
+    })
+
+//---------------------------------
+//--------- POSTMAN ---------------
+/**
+ *      CRUD
+ *      1. Create: tạo mới (cmt)        -> POST
+ *      2. Read: Lấy dữ liệu            -> GET
+ *      3. Update: chỉnh sửa, cập nhật  -> PUT / PATCH
+ *      4. Delete: xóa                  -> DELETE
+ */
+
+// Postman: test trước 
+// Đã cài
 
